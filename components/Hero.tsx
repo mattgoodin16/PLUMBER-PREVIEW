@@ -1,116 +1,163 @@
 export default function Hero() {
   return (
-    <section className="gradient-hero">
-      <div className="mx-auto max-w-6xl grid gap-10 px-4 py-10 lg:grid-cols-[1.4fr,1fr] items-center">
+    <section className="luxe-hero">
+      <div className="mx-auto flex max-w-6xl flex-col gap-10 px-4 py-12 lg:flex-row lg:items-center">
+        {/* Left: copy */}
+        <div className="max-w-xl">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.35em] text-luxeMuted">
+            Discreet 24/7 plumbing • Contra Costa
+          </p>
 
-        {/* Left side */}
-        <div>
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-black">
-            24/7 Emergency Plumbing
-            <span className="block text-brandLightBlue mt-1">
-              Trusted Local Pros in Contra Costa
+          <h1 className="mt-3 text-3xl font-semibold tracking-tight text-luxeIvory sm:text-4xl lg:text-5xl">
+            Plumbing service
+            <span className="block text-luxeGold">
+              that respects your home.
             </span>
           </h1>
 
-          <p className="mt-4 text-sm sm:text-base text-slate-200 max-w-xl">
-            Burst pipe? Clogged drain? No hot water? Our licensed plumbers
-            are standing by around the clock with fast arrival, up-front
-            pricing, and clean, professional service.
+          <p className="mt-4 text-sm text-slate-200 sm:text-base">
+            Contra Costa Plumbing Reserve provides a quiet, high standard
+            response for urgent and planned plumbing work. Thoughtful technicians,
+            carefully protected interiors, and clear communication at every step.
           </p>
 
-          <ul className="mt-5 grid gap-3 text-xs sm:text-sm sm:grid-cols-2 max-w-xl">
-            {[
-              "Same-day & emergency service 24/7",
-              "Licensed, bonded & insured technicians",
-              "Up-front, flat-rate pricing before work begins",
-              "Respect for your home — we leave it cleaner"
-            ].map((text) => (
-              <li key={text} className="flex items-start gap-2">
-                <span className="flex items-center justify-center h-5 w-5 rounded-full bg-brandGold text-slate-900 font-bold text-xs">
-                  ✓
-                </span>
-                <span>{text}</span>
-              </li>
-            ))}
-          </ul>
-
-          <div className="mt-6 flex flex-wrap items-center gap-4">
-            <a
-              href="tel:8001231234"
-              className="bg-brandGold text-slate-900 px-6 py-3 rounded-full text-sm font-semibold shadow-soft hover:brightness-110"
-            >
-              Call now · 800-123-1234
-            </a>
-
-            <div className="flex flex-col text-xs text-slate-300">
-              <span>Email us any time:</span>
-              <a
-                href="mailto:help@contracostaplumbingpros.com"
-                className="text-brandLightBlue font-medium"
-              >
-                help@contracostaplumbingpros.com
-              </a>
+          <div className="mt-6 grid gap-3 text-xs text-slate-200 sm:grid-cols-2">
+            <div className="flex items-start gap-2">
+              <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-luxeGold text-[11px] font-semibold text-luxeInk">
+                ✓
+              </span>
+              <span>Priority access for late evening and weekend calls</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-luxeGold text-[11px] font-semibold text-luxeInk">
+                ✓
+              </span>
+              <span>Floor coverings, boot protection, and quiet work practices</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-luxeGold text-[11px] font-semibold text-luxeInk">
+                ✓
+              </span>
+              <span>Clear, written estimates before any work begins</span>
+            </div>
+            <div className="flex items-start gap-2">
+              <span className="mt-0.5 inline-flex h-5 w-5 items-center justify-center rounded-full bg-luxeGold text-[11px] font-semibold text-luxeInk">
+                ✓
+              </span>
+              <span>Dedicated point of contact from first call to follow up</span>
             </div>
           </div>
 
-          <p className="mt-4 text-xs text-slate-400">
-            Serving Concord, Walnut Creek, Pittsburg, Antioch, Brentwood & more.
+          <div className="mt-7 flex flex-wrap items-center gap-4">
+            <a
+              href="tel:8001231234"
+              className="inline-flex items-center justify-center rounded-full bg-luxeGold px-7 py-3 text-sm font-semibold text-luxeInk shadow-luxeSoft hover:brightness-110"
+            >
+              Call concierge · 800-123-1234
+            </a>
+            <button
+              type="button"
+              className="luxe-pill px-5 py-2.5 text-xs font-semibold text-luxeIvory hover:bg-luxeGold/10 hover:border-luxeGold/60"
+            >
+              Request a quiet visit
+            </button>
+          </div>
+
+          <p className="mt-4 text-[11px] text-luxeMuted">
+            Serving Walnut Creek, Danville, Lafayette, Alamo, and surrounding Contra Costa neighborhoods.
           </p>
         </div>
 
-        {/* Right form */}
-        <div className="bg-slate-950/90 p-6 rounded-2xl shadow-soft ring-1 ring-slate-800">
-          <p className="text-[10px] uppercase tracking-widest text-brandLightBlue font-semibold">
-            Request Service
+        {/* Right: elevated request form */}
+        <div className="w-full max-w-md rounded-xl2 bg-luxeInk/80 p-6 shadow-luxeSoft ring-1 ring-slate-800/70 backdrop-blur">
+          <p className="text-[11px] font-semibold uppercase tracking-[0.35em] text-luxeMuted">
+            Private scheduling
           </p>
-
-          <h2 className="mt-2 text-lg font-semibold">
-            Need a plumber now? Start here.
+          <h2 className="mt-2 text-lg font-semibold text-luxeIvory">
+            Share a few details.
           </h2>
-
           <p className="mt-1 text-xs text-slate-300">
-            We’ll call you right back to confirm your appointment.
+            A coordinator will follow up to discreetly confirm timing, access,
+            and any special considerations for your property.
           </p>
 
-          <form className="mt-4 space-y-3">
-            {[
-              { label: "Name", type: "text", placeholder: "Your full name" },
-              { label: "Phone number", type: "tel", placeholder: "Best number to reach you" },
-              { label: "Email (optional)", type: "email", placeholder: "you@example.com" },
-              { label: "Zip code", type: "text", placeholder: "e.g. 94520" }
-            ].map((field) => (
-              <div key={field.label}>
-                <label className="text-xs text-slate-200">
-                  {field.label}
-                  <input
-                    type={field.type}
-                    placeholder={field.placeholder}
-                    className="mt-1 w-full px-3 py-2 rounded-md bg-slate-900/70 border border-slate-700 text-sm text-white outline-none focus:border-brandLightBlue"
-                  />
-                </label>
-              </div>
-            ))}
-
+          <form className="mt-4 space-y-3 text-xs">
             <div>
-              <label className="text-xs text-slate-200">
-                What do you need help with?
-                <textarea
-                  rows={3}
-                  placeholder="Briefly describe your plumbing issue"
-                  className="mt-1 w-full px-3 py-2 rounded-md bg-slate-900/70 border border-slate-700 text-sm text-white outline-none focus:border-brandLightBlue"
+              <label className="text-luxeIvory">
+                Name
+                <input
+                  type="text"
+                  placeholder="Full name"
+                  className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
                 />
               </label>
             </div>
-
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div>
+                <label className="text-luxeIvory">
+                  Phone
+                  <input
+                    type="tel"
+                    placeholder="Best number"
+                    className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="text-luxeIvory">
+                  Email
+                  <input
+                    type="email"
+                    placeholder="Optional"
+                    className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <div>
+                <label className="text-luxeIvory">
+                  Neighborhood
+                  <input
+                    type="text"
+                    placeholder="Area or city"
+                    className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
+                  />
+                </label>
+              </div>
+              <div>
+                <label className="text-luxeIvory">
+                  Preferred window
+                  <select
+                    className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
+                  >
+                    <option value="">Select</option>
+                    <option>Today if available</option>
+                    <option>Within 24 hours</option>
+                    <option>Within 3 days</option>
+                    <option>Scheduling in advance</option>
+                  </select>
+                </label>
+              </div>
+            </div>
+            <div>
+              <label className="text-luxeIvory">
+                How can we help
+                <textarea
+                  rows={3}
+                  placeholder="Briefly describe what you are noticing."
+                  className="mt-1 w-full rounded-md border border-slate-800 bg-luxeNavySoft px-3 py-2 text-sm text-luxeIvory outline-none focus:border-luxeGold/70"
+                />
+              </label>
+            </div>
             <button
               type="button"
-              className="w-full mt-2 bg-brandLightBlue text-slate-950 font-semibold px-4 py-2.5 rounded-full shadow-soft hover:brightness-110 text-sm"
+              className="mt-2 w-full rounded-full bg-luxeGold px-4 py-2.5 text-sm font-semibold text-luxeInk shadow-luxeSoft hover:brightness-110"
             >
-              Get fast help
+              Submit to coordinator
             </button>
-
-            <p className="text-[10px] text-slate-400">
-              By submitting, you agree to receive a call or text about your request.
+            <p className="mt-2 text-[10px] text-luxeMuted">
+              Details are used only to coordinate service for your property and are never shared.
             </p>
           </form>
         </div>
