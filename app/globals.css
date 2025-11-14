@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-slate-950 text-slate-100;
+}
+
+.gradient-hero {
+  background:
+    radial-gradient(circle at top left, rgba(0,169,255,0.35), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(251,191,36,0.35), transparent 55%),
+    #020617;
+}
