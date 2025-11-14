@@ -7,12 +7,21 @@
 }
 
 body {
-  @apply bg-slate-950 text-slate-100;
+  @apply bg-luxeNavy text-luxeIvory;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text", sans-serif;
 }
 
-.gradient-hero {
+.luxe-hero {
   background:
-    radial-gradient(circle at top left, rgba(0,169,255,0.35), transparent 55%),
-    radial-gradient(circle at bottom right, rgba(251,191,36,0.35), transparent 55%),
+    radial-gradient(circle at top left, rgba(245, 211, 122, 0.16), transparent 60%),
+    radial-gradient(circle at bottom right, rgba(15, 23, 42, 0.9), transparent 55%),
     #020617;
+}
+
+.luxe-card {
+  @apply bg-luxeInk/80 border border-slate-800/70 backdrop-blur-sm;
+}
+
+.luxe-pill {
+  @apply inline-flex items-center justify-center rounded-full border border-slate-700/70 bg-luxeInk/80;
 }
