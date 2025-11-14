@@ -8,13 +8,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brandBlue: "#003b73",
-        brandLightBlue: "#00a9ff",
-        brandGold: "#fbbf24",
-        bgDark: "#020617"
+        luxeNavy: "#020617",
+        luxeNavySoft: "#020824",
+        luxeInk: "#050816",
+        luxeGold: "#f5d37a",
+        luxeGoldSoft: "#f7e2a8",
+        luxeIvory: "#f9fafb",
+        luxeMuted: "#9ca3af"
       },
       boxShadow: {
-        soft: "0 18px 40px rgba(15, 23, 42, 0.35)"
+        luxeSoft: "0 24px 60px rgba(15, 23, 42, 0.65)"
+      },
+      borderRadius: {
+        xl2: "1.25rem"
       }
     }
   },
