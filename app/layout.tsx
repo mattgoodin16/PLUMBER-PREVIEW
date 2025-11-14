@@ -4,15 +4,15 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 
 export const metadata: Metadata = {
-  title: "Contra Costa Plumbing Pros | 24/7 Emergency Plumber",
+  title: "Contra Costa Plumbing Reserve | Discreet 24/7 Plumbing Service",
   description:
-    "Local, licensed plumbers providing 24/7 emergency plumbing services in Contra Costa County with fast arrival and up-front pricing."
+    "A boutique plumbing service for Contra Costa County delivering discreet, high standard residential and light commercial plumbing with 24/7 availability."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-luxeNavy text-luxeIvory">
         <Header />
         <main>{children}</main>
         <Footer />
