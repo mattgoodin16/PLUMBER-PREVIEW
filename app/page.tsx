@@ -8,12 +8,24 @@ import BottomCTA from "../components/BottomCTA";
 export default function Home() {
   return (
     <>
-      <Hero />
-      <Services />
-      <WhyChoose />
-      <Testimonials />
-      <FAQ />
-      <BottomCTA />
+      <section id="hero">
+        <Hero />
+      </section>
+      <section id="services">
+        <Services />
+      </section>
+      <section id="why">
+        <WhyChoose />
+      </section>
+      <section id="testimonials">
+        <Testimonials />
+      </section>
+      <section id="faq">
+        <FAQ />
+      </section>
+      <section id="contact-cta">
+        <BottomCTA />
+      </section>
     </>
   );
 }
