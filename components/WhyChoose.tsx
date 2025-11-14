@@ -1,43 +1,44 @@
 const reasons = [
   {
-    title: "Local, family-owned service",
-    body: "We live and work in Contra Costa, so you'll always get friendly, respectful technicians."
+    title: "Homes treated like spaces, not job sites",
+    body: "From arrival to final wipe down, technicians move carefully, protect surfaces, and minimize noise and disruption."
   },
   {
-    title: "Up-front, honest pricing",
-    body: "We inspect the issue, explain your options, and give a firm price before work begins."
+    title: "Clear expectations before work begins",
+    body: "You receive options and written pricing first, so you can decide how you would like to proceed."
   },
   {
-    title: "Clean, careful technicians",
-    body: "We use floor protection, shoe covers, and thorough cleanup so your home is respected."
+    title: "Consistent point of contact",
+    body: "You work with the same small office team who understands your property and preferences over time."
   },
   {
-    title: "Real 24/7 emergency support",
-    body: "Nights, weekends, and holidays — if water is where it shouldn't be, call and we'll help."
+    title: "Serving higher expectation neighborhoods",
+    body: "Focused on Walnut Creek, Danville, Lafayette, Alamo, and nearby areas where a higher standard of service is expected."
   }
 ];
 
 export default function WhyChoose() {
   return (
-    <section className="bg-slate-950">
+    <section className="bg-luxeNavySoft">
       <div className="mx-auto max-w-6xl px-4 py-10">
-        <p className="text-[10px] uppercase tracking-widest text-brandLightBlue font-semibold">
-          Why choose us
+        <p className="text-[11px] font-semibold uppercase tracking-[0.35em] text-luxeMuted">
+          Why clients stay with us
         </p>
-
-        <h2 className="mt-2 text-xl sm:text-2xl font-semibold">
-          Professional plumbers focused on service, not sales.
+        <h2 className="mt-2 text-xl font-semibold sm:text-2xl text-luxeIvory">
+          A quieter, more considered approach to plumbing work.
         </h2>
 
         <div className="mt-6 grid gap-4 md:grid-cols-2">
           {reasons.map((reason) => (
-            <div
+            <article
               key={reason.title}
-              className="p-5 rounded-2xl bg-slate-900/80 border border-slate-800 shadow-soft"
+              className="rounded-xl2 border border-slate-800/70 bg-luxeInk/80 p-5 shadow-luxeSoft/40"
             >
-              <h3 className="font-semibold text-sm">{reason.title}</h3>
+              <h3 className="text-sm font-semibold text-luxeIvory">
+                {reason.title}
+              </h3>
               <p className="mt-2 text-xs text-slate-300">{reason.body}</p>
-            </div>
+            </article>
           ))}
         </div>
       </div>
